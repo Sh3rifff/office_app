@@ -8,28 +8,50 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/MainPicture"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/AnchorForPicture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintVertical_weight="3"
-        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/pc" />
 
     <View
-        android:id="@+id/view"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/white"
+        android:id="@+id/AnchorForPicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/layout_bg_round"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_weight="5"
-        app:layout_constraintVertical_bias="0.9"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <View
+        android:id="@+id/MainView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/layout_bg_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/AnchorForView" />
+
+    <View
+        android:id="@+id/AnchorForView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/layout_bg_round"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
