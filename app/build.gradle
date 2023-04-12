@@ -82,4 +82,8 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:2.9.0"
     implementation "com.squareup.retrofit2:adapter-rxjava2:2.9.0"
 
+    //facebookLogin
+
+    implementation 'com.facebook.android:facebook-login:14.1.0'
+
 }
